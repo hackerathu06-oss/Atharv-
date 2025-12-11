@@ -1,0 +1,649 @@
+//  20/11/2025 //
+// 1) Write a Program Check if a number is positive or negative
+// 2) Write a Program if eligible for vote or also check citizenship
+// 3) Write a Program To Check if number is between 1 and 10
+// 4) Wite a Program To Check largest of three numbers
+// 5) Write a Program To Check if number is divisible by 5
+
+let A = 24;
+if (A > 0) {
+  console.log("Positive");
+} else {
+  console.log("negarive");
+}
+
+let age = 28;
+
+if (age < 18) {
+  console.log("not eligible for vote");
+} else if (age >= 18) {
+  console.log("eligible for vote");
+} else {
+  console.log("age not found");
+}
+
+let number = 10;
+
+if (number >= 1 && number <= 10) {
+  console.log(" is between 1 and 10");
+} else {
+  console.log("is not between 1 and 10");
+}
+
+let light = 4500;
+
+if (light >= 7800) {
+  console.log("then light is new ");
+} else if (light <= 3000) {
+  console.log("light is old");
+} else {
+  console.log("buy new light");
+}
+
+let num = 7;
+if (num >= 1 && num <= 10) {
+  console.log("the numbr is betwn 1 and 10");
+} else {
+  console.log("number is not between 1 to 10");
+}
+
+let v = 5;
+if (v % 5 == 0) {
+  console.log("divisible by 5");
+} else {
+  console.log("not divisible by 5");
+}
+
+// 21/11/2025 ///
+
+//     1) write a program using switch statement Traffic Light System Input a color (red/yellow/green) and print the action (stop, slow down, go).
+// 2) Wite a program using switch statement movies Ticket Prise  like Child  150rs , adult 250rs ,senior 150rs
+
+let signal = "Red";
+switch (signal) {
+  case "Red":
+    console.log("Stop");
+    break;
+  case "Yellow":
+    console.log("Slow down");
+    break;
+  case "Green":
+    console.log("Go");
+    break;
+
+  default:
+    let price = 7500; // Change this value to test different prices
+
+    let discount;
+    let discountedPrice;
+
+    switch (true) {
+      case price >= 10000:
+        discount = price * 0.2;
+        discountedPrice = price - discount;
+        console.log("Price: ₹" + price);
+        console.log("Discount (20%): ₹" + discount.toFixed(2));
+        console.log("Final Price: ₹" + discountedPrice.toFixed(2));
+        break;
+
+      case price >= 5000:
+        discount = price * 0.1; // 10% discount
+        discountedPrice = price - discount;
+        console.log("Price: ₹" + price);
+        console.log("Discount (10%): ₹" + discount.toFixed(2));
+        console.log("Final Price: ₹" + discountedPrice.toFixed(2));
+        break;
+
+      case price >= 1000:
+        discount = 0; // No discount
+        discountedPrice = price;
+        console.log("Price: ₹" + price);
+        console.log("Discount: No discount");
+        console.log("Final Price: ₹" + discountedPrice.toFixed(2));
+        break;
+
+      default:
+        console.log("Invalid price");
+    }
+    console.log("road is block");
+}
+
+let ticketAge = "child";
+
+switch (ticketAge) {
+  case "child":
+    console.log("150 rs");
+    break;
+  case "adult":
+    console.log("250rs");
+    break;
+  case "senior":
+    console.log("150rs");
+    break;
+
+  default:
+    console.log("rate not available");
+}
+
+//  25/10/25 //
+
+// 1) Write a program to calculate the EMI for ₹5,00,000 for 3, 6, 9, 12, 16, 20, and 24 months using a switch-case statement.
+// 2) Write a JavaScript program using a switch-case statement to calculate the discount on a product based on its price
+//    Apply a 20% discount if the price is ₹10000 or more,
+//         a 10% discount if the price is ₹5000 or more,
+//         and no discount for prices below ₹1000.
+
+// let principal = 500000;
+// let months = "9";
+// let emi;
+// switch (months) {
+//   case "3":
+//     emi = principal / "3";
+//     console.log(emi);
+
+//     break;
+
+//   case "6":
+//     emi = principal / "6";
+//     console.log(emi);
+
+//     break;
+
+//   case "9":
+//     principal / "9";
+//     console.log(emi);
+//     break;
+
+//   case "12":
+//     emi = principal / "12";
+//     console.log(emi);
+//     break;
+
+//   case "16":
+//     emi = principal / "16";
+//     console.log(emi);
+//     break;
+
+//   case "20":
+//     emi = principal / "20";
+//     console.log(emi);
+//     break;
+
+//   case "24":
+//     emi = principal / "24";
+//     console.log(emi);
+//     break;
+//   default:
+//     console.log("Invalid no of months");
+//     emi = null;
+// }
+
+// 2) Write a JavaScript program using a switch-case statement to calculate the discount on a product based on its price
+//        Apply a 20% discount if the price is ₹10.000 or more,
+//         a 10% discount if the price is ₹5000 or more,
+//         and no discount for prices below ₹1000.
+
+let month = 25;
+switch (month) {
+  case 3:
+    console.log(500000 / month);
+    break;
+  case 6:
+    console.log(500000 / month);
+    break;
+  case 9:
+    console.log(500000 / month);
+    break;
+  case 12:
+    console.log(500000 / month);
+    break;
+  case 16:
+    console.log(500000 / month);
+    break;
+  case 20:
+    console.log(500000 / month);
+    break;
+  case 24:
+    console.log(500000 / month);
+    break;
+  default:
+    console.log("invalid month");
+}
+
+let str2 = "Days in months";
+console.log(str2.slice(0, -4));
+
+// 27/10/25 //
+
+//     1)Write a program to replace the first occurrence of "cat" with "dog" in the string "The cat sits with another cat"?
+// 2) Write a program to replace all occurrences of "blue" with "green" in the string "blue sky and blue water"?
+// 3)Write a program to join the strings "Good" and "Morning" using the concat() method?
+// 4)Write a program to repeat the string "Hello" 2 times?
+// 5)Write a program to check if the string "JavaScript Tutorial" contains the word "Script"?
+// 6) Write a program to check if the string "Welcome Home" starts with "Welcome"?
+// 7) Write a program to check if the string "document.pdf" ends with ".pdf"?
+
+// 1)Write a program to replace the first occurrence of "cat" with "dog" in the string "The cat sits with another cat"?
+let word1 = "Dog cat ";
+console.log(word1.replaceAll("Dog", "cat"));
+
+// 2) Write a program to replace all occurrences of "blue" with "green" in the string "blue sky and blue water"?
+
+let word2 = "blue sky blue water";
+console.log(word2.replaceAll("blue", "green"));
+
+// 3)Write a program to join the strings "Good" and "Morning" using the concat() method?
+word3 = "Good";
+console.log(word3.concat(" ", "Morning"));
+
+// 4)Write a program to repeat the string "Hello" 2 times?
+
+word4 = "Hello";
+console.log(word4.repeat(2));
+
+// 5)Write a program to check if the string "JavaScript Tutorial" contains the word "Script"?
+
+let word5 = "JavaScript  Tutorial";
+console.log(word5.includes("Script"));
+
+// 6) Write a p).rogram to check if the string "Welcome Home" starts with "Welcome"?
+
+let word6 = "welcome Home";
+if ("welcome Home") {
+  console.log("yes,the String starts with 'Welcome'");
+} else "No,string does not start with 'Welcome'";
+
+// 7) Write a program to check if the string "document.pdf" ends with ".pdf"?
+
+let word7 = "document.pdf";
+if ("document.pdf") {
+  console.log("yes,string document ends with .pdf");
+} else "no,string document do not end with .pdf";
+
+// 1Given an array of registered students, check whether a new student name exists using includes().
+// If exists → print “Already Registered”, else → add using push().
+// 2) .If the array contains the incorrect value 0, find its position using indexOf() and replace it with 100 using splice().
+// 3).If the number of items is more than 3, use slice() to extract only the first 3 items and display them.
+// 4).You have three arrays representing different categories of data.
+// Based on a user’s selection (1, 2, or 3), you need to merge list1 with either list2 or list3 using concat().
+// Use a switch-case statement to perform the correct operation and print the merged result.
+
+// 1) Given an array of registered students, check whether a new student name exists using includes().
+// If exists → print "Already Registered", else → add using push().
+
+let students = ["Atharv", "Sarthak", "Amit", "Om"];
+let newStudent = "rutuja";
+
+if (students.includes(newStudent)) {
+  console.log(" is Already Registered");
+} else {
+  students.push(newStudent);
+  console.log(" has been added to the registration");
+  console.log("Updated student list");
+}
+// let
+// students=["Atharv","Sarthak","Amit","Om"];
+
+// if(students){
+//   students.includes()
+// }
+// 2) .If the array contains the incorrect value 0, find its position using indexOf() and replace it with 100 using splice().
+
+// let
+// value=[0,1,2,3,4];
+//  ty=value.indexOf(0);
+//  console.log(value.splice(ty),1,100);
+
+let array = [0, 0];
+red = array.indexOf(0);
+array.splice(red, 0, 100);
+console.log(array);
+
+// 3).If the number of items is more than 3, use slice() to extract only the first 3 items and display them.
+
+let items = ["Ghee", "colgete", "Oil", "vegetables"];
+console.log(items.slice(0, 3));
+
+// 4).You have three arrays representing different categories of data.
+// Based on a user’s selection (1, 2, or 3), you need to merge list1 with either list2 or list3 using concat().
+// Use a switch-case statement to perform the correct operation and print the merged result.
+
+let list1 = ["Apple", "Banana", "Grapes"];
+let list2 = ["Carrot", "Potato", "Tomato"];
+let list3 = ["Pen", "Book", "Notebook"];
+
+let userSelection = 2;
+
+let merged;
+
+switch (userSelection) {
+  case 1:
+    merged = list1.concat(list2);
+    console.log("Merged list1 and list2:", merged);
+    break;
+  case 2:
+    merged = list1.concat(list3);
+    console.log("Merged list1 and list3:", merged);
+    break;
+  case 3:
+    merged = list1.concat(list2); // Changed to merge list1 with list2 again, to strictly adhere to "merge list1 with either list2 or list3".
+    console.log("Merged list1 and list2 (again):", merged);
+    break;
+  default:
+    console.log("Invalid selection");
+}
+
+// 1. Use forEach to print every number in this array: [10, 20, 30, 40].
+// 2. Use map to create a new array containing the squares of [1, 2, 3, 4].
+// 3. Use filter to return only the numbers greater than 20 from [10, 25, 5, 40].
+
+//  1. Use forEach to print every number in this array: [10, 20, 30, 40].
+const values = [10, 20, 30, 40];
+
+values.forEach(function (number) {
+  console.log(number);
+});
+
+//  2. Use map to create a new array containing the squares of [1, 2, 3, 4].
+let mp = [1, 2, 3, 4];
+let result2 = mp.map((e) => e * e);
+console.log(result2);
+
+// 3. Use filter to return only the numbers greater than 20 from [10, 25, 5, 40].
+
+let numbers = [10, 25, 5, 40];
+let result = numbers.filter((e) => e > 20);
+console.log(result);
+
+// 1)Check Item in Array Using includes() and if-else
+// 2)Check if All Numbers Are Positive in array and use if-else also
+// 3)Check if an Array is Empty Using length and if-else
+
+//  1)Check Item in Array Using includes() and if-else
+
+let item = ["Banana", "Oil", "Ghee", "Milk"];
+console.log(item.includes());
+
+if ("Banana") {
+  console.log(" Item Is Included ");
+} else "Item not Included";
+
+// 2)Check if All Numbers Are Positive in array and use if-else also
+
+let positive = [1, 2, 3, 4, 5, 6, 7, 8];
+
+console.log(positive);
+
+if ("positive") {
+  console.log("Numbers are Positive");
+} else "All numbers are not positive";
+
+// 3)Check if an Array is Empty Using length and if-else
+
+// let empt=[12,13,14,15,16,17];
+// console.log(empt.length);
+
+// let ary1=[];
+// let ary2=[12,13,14,15,16,17];
+// if(ary1){
+//   console.log("Is empty array");
+// }
+// else if(ary2){
+//   console.log("Arry2 is not empty");
+// }
+// else("both are empty");
+
+let myArray1 = [];
+let myArray2 = [1, 2, 3];
+
+if (myArray1.length === 0) {
+  console.log("myArray1 is empty.");
+} else {
+  console.log("myArray1 is not empty.");
+}
+
+if (myArray2.length === 0) {
+  console.log("myArray2 is empty.");
+} else {
+  console.log("myArray2 is not empty.");
+}
+
+// let number1=67;
+// let number2=number>=100 && number<=200;?"Number is between range,":"not between range";
+// console.log(number2);
+
+// Q1. Check given number is available  in range 100–200 or not. (only using ternary operator).
+
+// let gv=67;
+// let rg=gv>=50?"it is available in range "
+
+// let num1 = ("Enter a number:");
+
+// num = Number(num);
+
+// (num >= 100 && num <= 200)
+//     ? console.log("Number is in the range 100–200")
+//     : console.log("Number is NOT in the range 100–200");
+
+let number1 = 67;
+console.log(
+  number1 >= 100 && number1 <= 200
+    ? "Number is between range"
+    : "Not between range"
+);
+
+// Write a program to check whether a given word is present inside a string or not.
+//         For example:
+//         String: "JavaScript is awesome"
+//          Word: "awesome"
+
+let word = ["JavaScript is awesome"];
+console.log(word.includes("awesome"));
+
+// 4. Write a program to swap the values of two numbers without using a third (extra) variable.
+//         Example:
+//         Input: a = 5, b = 10
+//          Output: a = 10, b = 5
+// Swap means to exchange the values of two things.
+
+let a = 5;
+let b = 10;
+console.log(a, b);
+[a, b] = [b, a];
+console.log(a, b);
+
+// 5. Write a program to calculate Simple Interest using the formula:
+//         (SI = P * R * T / 100).
+//        Where:
+// P = Principal amount
+// R = Rate of interest (in %)
+// T = Time (in years)
+
+let p = 200;
+let R = 20;
+let T = 5;
+let SI = (p * R * T) / 100;
+console.log(SI);
+
+// Write a program to count how many words are in a given sentence.
+// Example:
+// Input: "I love JavaScript"
+// Output: 3 (because there are 3 words)
+
+let J = "I love JavaScript";
+console.log(J.length);
+
+// Q10. Write a program to check whether a string starts with the letter A or a.
+// Example:
+// Input: "Apple" → true
+// Input: "banana" → false
+
+// let st=["Apple","banana"];
+// // let app=st.console.log(startswith("A"));
+// console.log(st.startsWith("A"));
+
+let year = 2028;
+if (year % 4 == 0) {
+  console.log("It is leap year");
+} else {
+  console.log("its not leap year");
+}
+
+// let W=38;
+// let w=67;
+// resu=2===0;
+
+//  08/12
+
+// ) Write a JavaScript program Divide Each Number by 5 in the Array
+// 2)Write a JavaScript Program Filter Words Starting With 'a ' in an Array
+// 3) Write a JavaScript Program Remove Empty Strings In an Array
+// 4) Write a JavaScript Program Capitalize First Letter of Each String in an Array
+
+// ) Write a JavaScript program Divide Each Number by 5 in the Array
+
+{
+  let numbers = [10, 25, 45, 100];
+
+  let result = numbers.map((number) => number / 5);
+
+  console.log(result);
+}
+
+// 2)Write a JavaScript Program Filter Words Starting With 'a ' in an Array
+
+{
+  let words = ["atharv", "apple", "salad", "amit"];
+  let filt = words.filter((words) => words.startsWith("a"));
+  console.log(filt);
+}
+
+// 3) Write a JavaScript Program Remove Empty Strings In an Array
+{
+  let st = ["S", "t", "A", "U", "", ""];
+  let us = st.filter((st) => st !== "");
+  console.log(us);
+}
+
+// 4) Write a JavaScript Program Capitalize First Letter of Each String in an Array
+{
+  let si = ["at", "bay", "crow", "day", "eagle"];
+  let us = si.map((si) => si.charAt().toUpperCase().slice());
+  console.log(us);
+}
+
+//         1. Numbers – Even & Odd
+// Store 10 integers in an array.
+// Use a for loop to separate them into two arrays: one for even numbers and one for odd numbers.
+// Print both arrays.
+
+for (let i = 0; i < originalNumbers.length; i++) {
+  if (originalNumbers[i] % 2 === 0) {
+    evenNumbers.push(originalNumbers[i]);
+  } else {
+    oddNumbers.push(originalNumbers[i]);
+  }
+}
+console.log("Even Numbers Array:", evenNumbers);
+console.log("Odd Numbers Array:", oddNumbers);
+
+//2 )A class has 5 students. Their exam marks are stored in an array.
+// Write a program using a for loop to calculate the average marks of the class.
+{
+  let studMarks = [45, 67, 89, 43, 90];
+  for (let i = 0; i <= studMarks.length; i++) {
+    studMarks;
+  }
+
+  let sum = studMarks.reduce((acc, i) => acc + i, 0);
+  console.log(sum / studMarks.length);
+}
+
+// 3) A cricket team’s scores in 6 matches are stored in an array. Write a program
+//   to find the highest score and the lowest score using a for loop.
+
+let scores = [55, 102, 12, 78, 45, 89];
+let highestScore = scores[0];
+let lowestScore = scores[0];
+for (let i = 1; i < scores.length; i++) {
+  if (scores[i] > highestScore) {
+    highestScore = scores[i];
+  }
+  if (scores[i] < lowestScore) {
+    lowestScore = scores[i];
+  }
+}
+console.log("The Highest Score is: " + highestScore);
+console.log("The Lowest Score is: " + lowestScore);
+
+// 1)Write a JavaScript program using a for loop to print numbers from 1 to 10.
+for (let a = 1; a <= 10; a++) {
+  console.log(a);
+}
+
+// 2)Write a program using a for loop to find the sum of all numbers.
+// arr = [5, 10, 15, 20];
+
+// for(let )
+
+{
+  let num = 500;
+  let f = num * 10;
+  // f=200
+  for (let a = f; a >= num; a = a - num) {
+    console.log(a);
+  }
+}
+
+{
+  let num = 500;
+  let f = num * 10;
+  for (let a = num; a <= f; a = a + num) {
+    console.log(a);
+  }
+}
+
+for (let i = 0; i <= 10; i++) {
+  const element = i;
+  if (element == 5) {
+    console.log("cyber is is best");
+  }
+  console.log(element);
+}
+
+// 1) let nums = [12, 5, 8, 130, 44];
+// Use a for loop to find the largest number in the array.
+let nums = [12, 5, 8, 130, 44];
+let big=nums[0];
+
+for (let num=0;num<nums.length;num++ ){
+if(nums[num]>big){
+  big=nums[num]
+
+}
+console.log(big);
+}
+
+// b=[12, 5, 8, 130, 44];
+// num=[0];
+//  for(let i=1;i=num.length;i++)
+//   b>[i];
+//   b>=[i];
+
+//   {
+// console.log(b);
+//   }
+
+
+
+
+// 2) Write a JavaScript program using a for loop to print the multiplication table of 7 (from 7×1 to 7×10).
+for( let a=7;a<=70;a=a+7 ){
+
+  console.log(a);
+}
+
+
+
+// 3) let arr = [3, -1, -7, 8, -3, 5];
+// Use a for loop to count how many negative numbers are present.//
